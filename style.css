@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+ * {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "lato";
+    color: white;
+    background: rgb(133, 8, 8);
+}
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #ffff;
+
+}
+nav a:hover{
+    color: rgb(58, 40, 40);
+}
+#nav-container{
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+#bars{
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+main h1{
+    font-family: Georgia, 'Times New Roman';
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+main h3{
+    padding-top: 5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+main button {
+    margin-top: 3rem;
+    padding: 1.3rem 3rem;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    background-color: rgb(58, 11, 11);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    transition: all 0.2s;
+}
+main button:hover{
+    color: rgb(136, 88, 88);
+    background-color: rgb(44, 44, 43);
+    box-shadow: 0 0 5px rgb(10, 1, 1);
+}
+#container,
+#particles-js{
+position: absolute;
+height: 100vh;
+width: 100vw;
+}
+#particles-js{
+    background: linear-gradient(
+        to bottom,
+        rgb(112, 45, 45)
+        rgb(165, 7, 7)
+
+    );
+}
+    @media screen and (max-width: 760px){
+        #nav-container{
+         display:block;   
+        }
+        #menu{
+            display: none;
+            position: absolute;
+            width: 90vw;
+            padding-top: 1rem;
+            flex-direction: column;
+            align-items:flex-end;
+            z-index: 1;
+        
+        }
+        #bars{
+            display: block;
+        }
+        main h1{
+            font-size: 2rem;
+        }
+        main h3{
+            padding-top: 4rem;
+            font-size: 1rem;
+        }
+        main button{
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+    }
